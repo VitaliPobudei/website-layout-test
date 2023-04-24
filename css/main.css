@@ -331,7 +331,7 @@ nav ul li a:active, nav ul li a:hover {
 }
 .promo {
   height: 850px;
-  background: url("/img/background/bg-promo.jpg");
+  background: url("../img/background/bg-promo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -378,7 +378,7 @@ nav ul li a:active, nav ul li a:hover {
 
 @media (max-width: 1200px) {
   .promo {
-    background: url("/img/background/bg-promo-1200.jpg") no-repeat;
+    background: url("../img/background/bg-promo-1200.jpg") no-repeat;
   }
   h1 p {
     font-size: 40px;
@@ -391,7 +391,7 @@ nav ul li a:active, nav ul li a:hover {
 @media (max-width: 768px) {
   .promo {
     height: 650px;
-    background: url("/img/background/bg-promo-800.jpg") no-repeat;
+    background: url("../img/background/bg-promo-800.jpg") no-repeat;
   }
   h1 p {
     font-size: 28px;
@@ -419,7 +419,7 @@ nav ul li a:active, nav ul li a:hover {
 }
 @media (max-width: 576px) {
   .promo {
-    background: url("/img/background/bg-promo-600.jpg") no-repeat;
+    background: url("../img/background/bg-promo-600.jpg") no-repeat;
   }
   h1 p {
     font-size: 24px;
@@ -447,7 +447,7 @@ nav ul li a:active, nav ul li a:hover {
 }
 .ordering {
   min-height: 920px;
-  background: url("/img/background/bg-ordering.jpg");
+  background: url("../img/background/bg-ordering.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -555,7 +555,7 @@ nav ul li a:active, nav ul li a:hover {
 
 @media (max-width: 1200px) {
   .ordering {
-    background: url("/img/background/bg-ordering-1200.jpg");
+    background: url("../img/background/bg-ordering-1200.jpg");
   }
   .dotted img {
     display: none;
@@ -613,7 +613,7 @@ nav ul li a:active, nav ul li a:hover {
 @media (max-width: 576px) {
   .ordering {
     min-height: 920px;
-    background: url("/img/background/bg-ordering-600.jpg");
+    background: url("../img/background/bg-ordering-600.jpg");
   }
   .ordering-items {
     row-gap: 10px;

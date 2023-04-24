@@ -1,6 +1,6 @@
 .ordering {
   min-height: 920px;
-  background: url("/img/background/bg-ordering.jpg");
+  background: url("../img/background/bg-ordering.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@
 
 @media (max-width: 1200px) {
   .ordering {
-    background: url("/img/background/bg-ordering-1200.jpg");
+    background: url("../img/background/bg-ordering-1200.jpg");
   }
   .dotted img {
     display: none;
@@ -180,7 +180,7 @@
 @media (max-width: 576px) {
   .ordering {
     min-height: 920px;
-    background: url("/img/background/bg-ordering-600.jpg");
+    background: url("../img/background/bg-ordering-600.jpg");
   }
 
   .ordering-items {
