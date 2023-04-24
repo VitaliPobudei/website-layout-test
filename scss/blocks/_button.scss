@@ -1,0 +1,58 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
+  width: 183px;
+  margin-bottom: 150px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  background-color: $marker-text;
+  line-height: 16px;
+  font-weight: 400;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  vertical-align: center;
+  text-align: center;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in,
+    border 0.2s ease-in, box-shadow 0.2s ease-in;
+
+  &:hover {
+    background-color: $hover-link;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.12);
+    border: 1px solid #6f6d7b;
+  }
+
+  &--white {
+    background-color: white;
+    color: #2a2b30;
+    border: 1px solid #6f6d7b;
+
+    &:hover {
+      background-color: #6f6d7b;
+      color: white;
+    }
+  }
+
+  &--large {
+    height: 48px;
+    width: 370px;
+    margin-top: 40px;
+
+    background: #3e9cdc;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 576px) {
+  .button--large {
+    width: 290px;
+  }
+}

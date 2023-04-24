@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website layout test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo">LoremIpsum.<span>Net</span></a>
+          <ul>
+            <li><a class="nav__item active" href="#">Бизнес</a></li>
+            <li><a class="nav__item" href="#">О нас</a></li>
+            <li><a class="nav__item" href="#">Цены</a></li>
+            <li><a class="nav__item" href="#">Оформить заказ</a></li>
+          </ul>
+        </nav>
+        <div class="burger-menu">
+          <div class="burger-logo">
+            <a class="logo">LoremIpsum.<span>Net</span></a>
+          </div>
+          <div class="burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="promo">
+        <div class="container">
+          <div class="promo__row">
+            <h1>
+              <p><span>Lorem ipsum</span> dolor sit</p>
+              <p>amet consectetur <span>adipiscing</span></p>
+            </h1>
+            <div class="promo__list">
+              <h3>
+                At vero eos et accusamus et iusto odio dignissimos ducimus!
+              </h3>
+              <ul>
+                <li><span>&ndash;</span>Totam rem aperiam eaque ipsa</li>
+                <li>
+                  <span>&ndash;</span>Sit voluptatem accusantium doloremque
+                  laudantium
+                </li>
+                <li>
+                  <span>&ndash;</span>Sed ut perspiciatis, unde omnis iste natus
+                  error
+                </li>
+              </ul>
+            </div>
+            <div class="promo__button">
+              <a href="#ordering" class="button">заказать</a>
+              <a href="#" class="button button--white">подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ordering" id="ordering">
+        <div class="container">
+          <div class="ordering__text">
+            <h2>Оформление <span>Заказа</span></h2>
+            <p>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+          </div>
+
+          <div class="scheme-work">
+            <div class="scheme-work__item search">
+              <img src="./img/badge/search.png" alt="search" />
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="dotted">
+              <img src="./img/badge/dotted.png" alt="dotted" />
+            </div>
+            <div class="scheme-work__item percent">
+              <img src="./img/badge/percentage.png" alt="spercentage" />
+              <p>Сonsecteturadipiscing elit</p>
+            </div>
+            <div class="dotted">
+              <img src="./img/badge/dotted.png" alt="dotted" />
+            </div>
+            <div class="scheme-work__item pact">
+              <img src="./img/badge/pact.png" alt="pact" />
+              <p>Sed do eiusmod tempor</p>
+            </div>
+            <div class="dotted">
+              <img src="./img/badge/dotted.png" alt="dotted" />
+            </div>
+            <div class="scheme-work__item send">
+              <img src="./img/badge/verification.png" alt="verification" />
+              <p>Esse cillum dolore eu fugiat</p>
+            </div>
+            <div class="dotted">
+              <img src="./img/badge/dotted.png" alt="dotted" />
+            </div>
+            <div class="scheme-work__item pay">
+              <img src="./img/badge/remuneration.png" alt="remuneration" />
+              <p>Excepteur sint occaecat cupidatat non proident</p>
+            </div>
+          </div>
+
+          <div class="ordering-items">
+            <div class="select">
+              <select class="js-choice" name="format">
+                <option value="">Выберите тип системы</option>
+                <option>sed ut perspiciatis</option>
+                <option>nemo enim ipsam</option>
+                <option>et harum quidem</option>
+                <option>temporibus autem</option>
+                <option>itaque earum rerum</option>
+                <option>sed ut perspiciatis</option>
+                <option>nemo enim ipsam</option>
+                <option>et harum quidem</option>
+                <option>temporibus autem</option>
+                <option>itaque earum rerum</option>
+              </select>
+            </div>
+
+            <div class="input-email" name="email">
+              <label>
+                <input
+                  type="mail"
+                  name="login"
+                  maxlength="30"
+                  placeholder="Ваш e-mail"
+                  id="input-email"
+                />
+              </label>
+            </div>
+
+            <div class="input-name" name="name">
+              <label>
+                <input
+                  type="text"
+                  name="name"
+                  maxlength="20"
+                  placeholder="Ваше имя"
+                  id="input-name"
+                />
+              </label>
+            </div>
+
+            <div class="range" name="range">
+              <div class="range__title">
+                <span>Sed ut perspiciatis, unde omnis iste natus</span>
+                <p>
+                  <output name="amount" id="amount" for="rangeInput">75</output
+                  >%
+                </p>
+              </div>
+
+              <input
+                type="range"
+                class="istyle"
+                id="rangeInput"
+                name="rangeInput"
+                min="0"
+                max="100"
+                value="75"
+                oninput="amount.value=rangeInput.value"
+              />
+            </div>
+
+            <div class="file">
+              <form method="post" enctype="multipart/form-data">
+                <label class="input-file">
+                  <input type="file" name="file" />
+                  <span>
+                    <img
+                      class="exitHover"
+                      src="./img/icons/file.svg"
+                      alt="file"
+                    />
+                    Прикрепить файл
+                  </span>
+                </label>
+              </form>
+            </div>
+          </div>
+
+          <div class="ordering__row">
+            <div class="input__row"></div>
+
+            <button class="button button--large" type="submit">
+              Отправить
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <dl>
+            <div class="copyright">
+              <dt class="visuale-hidden">Copyright</dt>
+              <dd><span>© 2018 «LoremIpsum.net»</span> Все права защищены.</dd>
+            </div>
+
+            <div class="qiwi">
+              <dt class="visuale-hidden">Payment systems Qiwi wallet</dt>
+              <dd>
+                <img
+                  src="./img/icons/qiwi-wallet.svg"
+                  alt="icon qiwi wallet"
+                />Qiwi wallet
+              </dd>
+            </div>
+
+            <div class="yandexMoney">
+              <dt class="visuale-hidden">Payment systems Yandex Money</dt>
+              <dd>
+                <img
+                  src="./img/icons/yandex-money.svg"
+                  alt="icon yandex money"
+                />Yandex Money
+              </dd>
+            </div>
+
+            <div class="webMoney">
+              <dt class="visuale-hidden">Payment systems Web Money</dt>
+              <dd>
+                <img src="./img/icons/web-money.svg" alt="icon web money" />Web
+                Money
+              </dd>
+            </div>
+
+            <div class="email">
+              <dt class="visuale-hidden">Сontact email</dt>
+              <dd>
+                <a href="mailto:info@ipsum228.com"
+                  ><img src="./img/icons/email.svg" alt="icon email" />
+                  info@ipsum228.com
+                </a>
+              </dd>
+            </div>
+
+            <div class="vkontakte">
+              <dt class="visuale-hidden">Сontact VK</dt>
+              <dd>
+                <a href="#"
+                  ><img src="./img/icons/vkontakte.svg" alt="icon vkontakte" />
+                  Мы вконтакте
+                </a>
+              </dd>
+            </div>
+
+            <div class="contacts"></div>
+          </dl>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

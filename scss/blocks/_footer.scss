@@ -1,0 +1,230 @@
+footer {
+  background-color: #3d4050;
+  height: 80px;
+  line-height: 80px;
+
+  .container {
+    display: grid;
+    align-items: center;
+  }
+}
+
+.footer__row {
+  line-height: 100%;
+  vertical-align: middle;
+}
+
+dl {
+  display: grid;
+  grid-template-areas: "copyright qiwi yandexMoney webMoney email vkontakte";
+  align-items: center;
+  justify-content: center;
+
+  div {
+    color: $footer-text;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+.copyright {
+  grid-area: copyright;
+  padding-right: 40px;
+}
+.qiwi {
+  grid-area: qiwi;
+  padding-left: 40px;
+  border-left: 1px solid $footer-text;
+}
+.yandexMoney {
+  grid-area: yandexMoney;
+  padding-left: 38px;
+}
+.webMoney {
+  grid-area: webMoney;
+  padding-left: 38px;
+  padding-right: 40px;
+  border-right: 1px solid $footer-text;
+}
+.email {
+  grid-area: email;
+  padding-left: 40px;
+}
+.vkontakte {
+  grid-area: vkontakte;
+  padding-left: 38px;
+}
+
+dd {
+  img {
+    margin-right: 10px;
+    vertical-align: sub;
+  }
+
+  span {
+    text-transform: uppercase;
+  }
+
+  a {
+    transition: active 0.2s ease-in, color 0.2s ease-in;
+
+    &:active,
+    &:hover {
+      color: $hover-link;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  footer {
+    height: 100px;
+    line-height: normal;
+  }
+
+  .footer__row {
+    line-height: normal;
+    vertical-align: middle;
+    dl {
+      grid-template-areas:
+        "copyright copyright copyright copyright copyright"
+        "qiwi yandexMoney webMoney email vkontakte";
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .copyright {
+    grid-area: copyright;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    padding-right: 0px;
+  }
+  .qiwi {
+    grid-area: qiwi;
+    padding-left: 0px;
+    border-left: 1px solid transparent;
+  }
+  .yandexMoney {
+    grid-area: yandexMoney;
+    padding-left: 38px;
+  }
+  .webMoney {
+    grid-area: webMoney;
+    padding-left: 38px;
+    padding-right: 40px;
+    border-right: 1px solid $footer-text;
+  }
+  .email {
+    grid-area: email;
+    padding-left: 40px;
+  }
+  .vkontakte {
+    grid-area: vkontakte;
+    padding-left: 38px;
+  }
+}
+
+@media (max-width: 850px) {
+  footer {
+    height: 150px;
+  }
+
+  .footer__row {
+    display: grid;
+    dl {
+      grid-template-areas:
+        "email vkontakte . ."
+        "qiwi yandexMoney webMoney ."
+        "copyright copyright copyright copyright";
+
+      grid-template-columns: 1fr 1fr 1fr auto;
+    }
+  }
+
+  .copyright {
+    grid-area: copyright;
+    padding-bottom: 0px;
+    padding-top: 15px;
+    border-top: 1px solid $footer-text;
+  }
+  .qiwi {
+    grid-area: qiwi;
+    padding-left: 0px;
+    padding-bottom: 30px;
+    border-left: 1px solid transparent;
+  }
+  .yandexMoney {
+    grid-area: yandexMoney;
+    padding-left: 0px;
+    padding-bottom: 30px;
+  }
+  .webMoney {
+    grid-area: webMoney;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    border-right: 1px solid transparent;
+  }
+  .email {
+    grid-area: email;
+    padding-left: 0px;
+    padding-bottom: 8px;
+  }
+  .vkontakte {
+    grid-area: vkontakte;
+    padding-left: 0px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    height: 250px;
+    .copyright {
+      text-align: center;
+    }
+  }
+
+  .footer__row {
+    display: grid;
+
+    dl {
+      grid-template-areas:
+        "email"
+        "vkontakte"
+        "qiwi"
+        "yandexMoney"
+        "webMoney"
+        "copyright";
+
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+    }
+  }
+
+  .copyright {
+    grid-area: copyright;
+    padding-top: 15px;
+  }
+  .qiwi {
+    grid-area: qiwi;
+    padding-bottom: 8px;
+  }
+  .yandexMoney {
+    grid-area: yandexMoney;
+    padding-bottom: 8px;
+  }
+  .webMoney {
+    grid-area: webMoney;
+    padding-bottom: 8px;
+  }
+  .email {
+    grid-area: email;
+    padding-bottom: 8px;
+  }
+  .vkontakte {
+    grid-area: vkontakte;
+    padding-bottom: 22px;
+  }
+}

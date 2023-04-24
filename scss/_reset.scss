@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+}
+
+input,
+button,
+input::placeholder,
+textarea,
+textarea::placeholder,
+select {
+  border: none;
+  font-family: "Lato", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+dt,
+dl,
+dd {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visuale-hidden {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
